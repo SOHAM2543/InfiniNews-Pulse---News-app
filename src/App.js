@@ -11,6 +11,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Footer from './components/Footer';
 
 export default class App extends Component {
   pageSize= 5;
@@ -44,6 +45,7 @@ export default class App extends Component {
           <Route exact  path="/technology" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="technology "pageSize={this.pageSize} country="in" category="technology"/>} />
         </Routes>
         </Router>
+        <Footer />
       </div>
     )
   }
